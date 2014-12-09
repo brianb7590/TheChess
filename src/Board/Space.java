@@ -21,4 +21,14 @@ public class Space {
         this.isOccupied = false;
         pieceOnSpace = null;
     }
+
+    public int getRow()
+    {
+        return row;
+    }
+
+    public int getColumn()
+    {
+        return column;
+    }
 }
