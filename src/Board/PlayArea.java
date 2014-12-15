@@ -10,14 +10,19 @@ public class PlayArea extends JPanel
 {
     public PlayArea()
     {
+
         initChildren();
+
+        this.invalidate();
+
     }
 
     private void initChildren()
     {
         Board b = new Board(8,8);
         b.setBackground(Color.red);
-        b.setSize(500,500);
+        b.setMinimumSize(new Dimension(400,400));
+        //b.setSize(900,900);
         this.add(b);
     }
 
@@ -25,6 +30,6 @@ public class PlayArea extends JPanel
     {
         super.paint(g);
         g.setColor(Color.BLACK);
-        g.fillRect(0,0, 400,400);
+        //g.fillRect(0,0, 700,700);
     }
 }
