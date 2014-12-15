@@ -1,9 +1,11 @@
 package Pieces;
 
+import javax.swing.*;
+
 /**
  * Created by brianbenavides on 12/9/14.
  */
-public class Pawn implements GamePiece {
+public class Pawn extends JComponent implements GamePiece {
 
     @Override
     public boolean canMove() {
@@ -12,11 +14,10 @@ public class Pawn implements GamePiece {
 
     @Override
     public void moveTo(int x, int y) {
-
     }
 
     @Override
-    public boolean getName() {
+    public boolean getPieceName() {
         return false;
     }
 

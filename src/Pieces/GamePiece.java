@@ -9,7 +9,7 @@ public interface GamePiece {
 
     public void moveTo(int x, int y);
 
-    public boolean getName();
+    public boolean getPieceName();
 
     public boolean getId();
 

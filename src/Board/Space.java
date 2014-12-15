@@ -2,12 +2,13 @@ package Board;
 
 import Pieces.GamePiece;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 /**
  * Created by brianbenavides on 12/9/14.
  */
-public class Space {
+public class Space extends JComponent {
 
     private GamePiece pieceOnSpace;
     private boolean isOccupied;
