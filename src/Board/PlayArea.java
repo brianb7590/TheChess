@@ -16,6 +16,7 @@ public class PlayArea extends JPanel
     private void initChildren()
     {
         Board b = new Board(8,8);
+        b.setBackground(Color.red);
         b.setSize(500,500);
         this.add(b);
     }
