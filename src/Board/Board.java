@@ -19,6 +19,14 @@ public class Board extends JPanel{
         initializeBoard(rows, columns);
     }
 
+    public void paint(Graphics g)
+    {
+        super.paint(g);
+
+        g.setColor(Color.CYAN);
+        g.fillRect(100,100,200,200);
+    }
+
     private void initializeBoard(int x, int y)
     {
         for(int i = 0; i < x; i++)
@@ -26,6 +34,7 @@ public class Board extends JPanel{
             for(int j = 0; j < y; j++)
             {
                 boardSpaces[i][j] = new Space(x, y);
+                //this.add(boardSpaces[i][j]);
             }
         }
     }
